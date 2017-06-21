@@ -13,6 +13,12 @@
 
 .footer-nav-menu ul.menu {
     list-style-type: none;
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.footer-nav-menu a {
     color: #d54744 !important;
     text-decoration: none;
 }
