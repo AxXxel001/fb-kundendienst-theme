@@ -1,6 +1,6 @@
 <?php
 
-require_once(home_url() . '/wp-admin/includes/taxonomy.php');
+require_once('../../wp-admin/includes/taxonomy.php');
 
 //////////////////////////////////////////////////////////////////////////////
 //                 Custom Menu Registration
