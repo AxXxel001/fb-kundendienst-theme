@@ -12,6 +12,18 @@ $template_root = get_template_directory_uri();
                 <!-- NAVBAR WIE OBEN!!!!!!!!! -->
 
                 <h3 class="footer-headline">Facebook Kundendienst</h3>
+
+                <?php
+                wp_nav_menu(
+                    array(
+                        'theme_location' => 'fb-kundendienst-menu',
+                        'before' => '<div class="navbar-navlink w-nav-link">',
+                        'after' => '</div>'
+                    )
+                );
+                ?>
+
+                <!--
                 <ul class="w-list-unstyled">
                     <li><a class="footer-link" href="#">Text Link</a>
                     </li>
@@ -20,6 +32,7 @@ $template_root = get_template_directory_uri();
                     <li><a class="footer-link" href="#">Text Link</a>
                     </li>
                 </ul>
+                -->
             </div>
 
 

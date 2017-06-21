@@ -8,4 +8,5 @@ ul.menu {
 
 .navbar-menu a {
     color: #d54744 !important;
+    text-decoration: none;
 }
