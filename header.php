@@ -39,7 +39,6 @@ $template_root = get_template_directory_uri();
             wp_nav_menu(
                 array(
                     'theme_location' => 'fb-kundendienst-menu',
-                    'container_class' => 'navbar-mobile w-nav-menu',
                     'before' => '<div class="navbar-navlink w-nav-link">',
                     'after' => '</div>'
                 )
