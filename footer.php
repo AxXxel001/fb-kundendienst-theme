@@ -13,13 +13,15 @@ $template_root = get_template_directory_uri();
 
                 <h3 class="footer-headline">Facebook Kundendienst</h3>
 
-                <?php
-                wp_nav_menu(
-                    array(
-                        'theme_location' => 'fb-kundendienst-menu'
-                    )
-                );
-                ?>
+                <div class="footer-nav-menu">
+                    <?php
+                    wp_nav_menu(
+                        array(
+                            'theme_location' => 'fb-kundendienst-menu'
+                        )
+                    );
+                    ?>
+                </div>
 
                 <!--
                 <ul class="w-list-unstyled">
