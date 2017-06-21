@@ -83,7 +83,7 @@
 }
 
 .navbar-navlink {
-  color: #d54744;
+  color: #d54744 !important;
 }
 
 .button {
