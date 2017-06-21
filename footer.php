@@ -51,6 +51,13 @@ $template_root = get_template_directory_uri();
 
             <!-- BESCHWERDE NEWSLETTER!!! -->
 
+            <?php
+                $posts = get_posts(array('category' => 'fb-kundendienst-beschwerde'));
+                $length = sizeof($posts);
+                $choice = rand(0, $length);
+                echo $posts[$choice];
+            ?>
+
             <div class="footer-column w-col w-col-4">
                 <h3 class="footer-headline">Mach jetzt mit!</h3>
                 <blockquote class="footer-quote">Beschwerde Beschwerde Beschwerde Beschwerde Beschwerde</blockquote>
