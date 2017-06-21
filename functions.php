@@ -5,7 +5,7 @@
 //////////////////////////////////////////////////////////////////////////////
 
 function register_menu() {
-register_nav_menu('menu', __( 'FB-Kundendienst Menu' ));
+register_nav_menu('fb-kundendienst-menu', __( 'FB-Kundendienst Menu' ));
 }
 add_action( 'init', 'register_menu' );
 

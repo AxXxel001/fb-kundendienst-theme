@@ -33,10 +33,25 @@ $template_root = get_template_directory_uri();
         <!-- !!! NAVBAR !!! -->
 
         <nav class="navbar-menu w-nav-menu" role="navigation">
+
+            <?php
+            wp_nav_menu(
+                array(
+                    'theme_location' => 'fb-kundendienst-menu',
+                    'container_class' => 'navbar-mobile w-nav-menu',
+                    'before' => '<div class="navbar-navlink w-nav-link">',
+                    'after' => '</div>'
+                )
+            );
+            ?>
+
+            <!--
             <a class="navbar-navlink w-nav-link" href="#">Home</a>
             <a class="navbar-navlink w-nav-link" href="with-sidebar.html">with-sidebar</a>
             <a class="navbar-navlink w-nav-link" href="blogpost.html">blogpost</a>
             <a class="navbar-navlink w-nav-link" href="single.html">single</a>
+            -->
+
         </nav>
         <div class="w-nav-button">
             <div class="w-icon-nav-menu"></div>
