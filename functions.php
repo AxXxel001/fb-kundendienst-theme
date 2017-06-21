@@ -1,8 +1,6 @@
 <?php
 
-//require_once('../../../wp-admin/includes/taxonomy.php');
-
-echo "CONTENT DIR: " . WP_HOME;
+require_once(WP_CONTENT_DIR . '/../wp-admin/includes/taxonomy.php');
 
 //////////////////////////////////////////////////////////////////////////////
 //                 Custom Menu Registration
