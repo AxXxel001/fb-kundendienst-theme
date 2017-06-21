@@ -31,4 +31,11 @@ register_sidebar( array(
 }
 add_action( 'widgets_init', 'widgets_init' );
 
+//////////////////////////////////////////////////////////////////////////////
+//                 Custom Category Registration
+//////////////////////////////////////////////////////////////////////////////
+
+wp_create_category( 'fb-kundendienst-beschwerde' );
+wp_create_category( 'fb-kundendienst-post' );
+
 ?>
