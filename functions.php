@@ -2,7 +2,7 @@
 
 //require_once('../../../wp-admin/includes/taxonomy.php');
 
-echo "CONTENT DIR: " . WP_CONTENT_DIR;
+echo "CONTENT DIR: " . WP_HOME;
 
 //////////////////////////////////////////////////////////////////////////////
 //                 Custom Menu Registration
