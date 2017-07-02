@@ -60,9 +60,9 @@ $template_root = get_template_directory_uri();
 
             <div class="footer-column w-col w-col-4">
                 <h3 class="footer-headline">Mach jetzt mit!</h3>
-                <blockquote class="footer-quote"><?php the_content(); ?></blockquote>
+                <blockquote class="footer-quote"><?php echo $id; ?></blockquote>
                 <div class="footer-quote-name">- Name</div>
-                <div class="w-form">
+                <div>
                     <form data-name="Email Form" id="email-form" name="email-form">
                         <input class="w-input" data-name="email" id="email-2" maxlength="256" name="email" placeholder="Deine Emailadresse..." required="required" type="email">
                         <textarea class="w-input" data-name="answer" id="answer" maxlength="5000" name="answer" placeholder="Deine Kundendienst Antwort..." required="required"></textarea>
