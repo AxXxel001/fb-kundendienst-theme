@@ -56,11 +56,12 @@ $template_root = get_template_directory_uri();
                 $length = sizeof($posts);
                 $choice = rand(0, $length);
                 setup_postdata( $posts[$choice] );
+                $current_post = get_post($id);
             ?>
 
             <div class="footer-column w-col w-col-4">
                 <h3 class="footer-headline">Mach jetzt mit!</h3>
-                <blockquote class="footer-quote"><?php echo $id; ?></blockquote>
+                <blockquote class="footer-quote"><?php echo $current_post->post_title; ?></blockquote>
                 <div class="footer-quote-name">- Name</div>
                 <div>
                     <form data-name="Email Form" id="email-form" name="email-form">
