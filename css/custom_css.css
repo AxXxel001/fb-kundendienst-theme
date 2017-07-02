@@ -35,7 +35,7 @@
         margin: 0px;
     }
 
-    .menu {
+    ul.menu {
         flex-direction: column;
     }
 
