@@ -58,4 +58,3 @@ $template_root = get_template_directory_uri();
         </div>
     </div>
 </div>
-<div class="content"></div>
