@@ -63,18 +63,12 @@ $template_root = get_template_directory_uri();
                 <h3 class="footer-headline">Mach jetzt mit!</h3>
                 <blockquote class="footer-quote"><?php echo $current_post->post_content; ?></blockquote>
                 <div class="footer-quote-name">-&nbsp;<?php echo get_field('person_name', $id); ?></div>
-                <div>
+                <div class="fb-footer-form">
                     <form data-name="Email Form" id="email-form" name="email-form">
                         <input class="w-input" data-name="email" id="email-2" maxlength="256" name="email" placeholder="Deine Emailadresse..." required="required" type="email">
                         <textarea class="w-input" data-name="answer" id="answer" maxlength="5000" name="answer" placeholder="Deine Kundendienst Antwort..." required="required"></textarea>
                         <input class="button button-full-width w-button" data-wait="Bitte warten..." type="submit" value="Antwort einreichen!">
                     </form>
-                    <div class="w-form-done">
-                        <div>Thank you! Your submission has been received!</div>
-                    </div>
-                    <div class="w-form-fail">
-                        <div>Oops! Something went wrong while submitting the form</div>
-                    </div>
                 </div>
             </div>
         </div>
