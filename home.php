@@ -25,26 +25,26 @@ get_header();
         ?>
 
         <div class="fb-post-full-wrapper">
-          <h2 class="fb-post-headline">Kundendienst bei Unternehmen X</h2>
+          <h2 class="fb-post-headline"><?php the_title(); ?></h2>
           <div class="fb-post-meta-wrapper">
             <div class="fb-post-meta-left-wrapper">
-              <div>von Alex</div>
+              <div>von&nbsp;<?php the_author(); ?></div>
             </div>
             <div>
-              <div>17.06.2017</div>
+              <div><?php the_date(); ?></div>
             </div>
           </div>
-          <div class="fb-post-author-comment">This is some text inside of a div block.</div>
+          <div class="fb-post-author-comment"><?php the_field('intro'); ?></div>
           <div class="blogpost-wrapper">
             <div class="fb-post-wrapper"><img class="fb-post-image" src="https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg" width="64">
               <div class="fb-post-data-wrapper">
                 <div class="fb-post-data-name-wrapper">
-                  <div class="fb-blue">Vorname</div><img class="fb-post-data-name-icon" src="https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg" width="15">
-                  <div class="fb-blue">Unternehmen</div>
+                  <div class="fb-blue"><?php the_field('name'); ?></div><img class="fb-post-data-name-icon" src="https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg" width="15">
+                  <div class="fb-blue"><?php the_field('unternehmen'); ?></div>
                 </div>
               </div>
             </div>
-            <div class="fb-post-text">This is some text inside of a div block.</div>
+            <div class="fb-post-text"><?php the_field('post_html'); ?></div>
           </div>
         </div>
 
