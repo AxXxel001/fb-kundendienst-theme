@@ -26,3 +26,17 @@
 .fb-footer-form {
     margin-bottom: 1em;
 }
+
+/* Mobile Menu Optimization */
+
+@media screen and (max-width: 991px) {
+
+    .navbar-menu {
+        margin: 0px;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+}
