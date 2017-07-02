@@ -55,8 +55,6 @@ $template_root = get_template_directory_uri();
                 $posts = get_posts(array('category' => 'fb-kundendienst-beschwerde'));
                 $length = sizeof($posts);
                 $choice = rand(0, $length-1);
-                print_r($posts);
-                echo $choice;
                 setup_postdata( $posts[$choice] );
                 $current_post = get_post($id);
             ?>
