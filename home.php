@@ -18,6 +18,12 @@ get_header();
         <!-- Start the Loop. -->
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
+        <?php
+          if (has_category('fb-kundendienst-beschwerde')) {
+              continue;
+          }
+        ?>
+
         <div class="fb-post-full-wrapper">
           <h2 class="fb-post-headline">Kundendienst bei Unternehmen X</h2>
           <div class="fb-post-meta-wrapper">
@@ -33,8 +39,7 @@ get_header();
             <div class="fb-post-wrapper"><img class="fb-post-image" src="https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg" width="64">
               <div class="fb-post-data-wrapper">
                 <div class="fb-post-data-name-wrapper">
-                  <div class="fb-blue">Vorname <span class="blur">Nachname</span>
-                  </div><img class="fb-post-data-name-icon" src="https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg" width="15">
+                  <div class="fb-blue">Vorname</div><img class="fb-post-data-name-icon" src="https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg" width="15">
                   <div class="fb-blue">Unternehmen</div>
                 </div>
               </div>
