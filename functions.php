@@ -21,14 +21,12 @@ add_action( 'init', 'register_menu' );
 */
 function widgets_init() {
 
-register_sidebar( array(
-'name'          => 'sidebar',
-'id'            => 'sidebar',
-'before_widget' => '<div>',
-    'after_widget'  => '</div>',
-'before_title'  => '<h2 class="rounded">',
-    'after_title'   => '</h2>',
-) );
+register_sidebar(array(
+	'name'          => 'sidebar',
+	'id'            => 'sidebar',
+	'before_widget' => '<div>',
+    'after_widget'  => '</div>'
+));
 
 }
 add_action( 'widgets_init', 'widgets_init' );
@@ -39,5 +37,14 @@ add_action( 'widgets_init', 'widgets_init' );
 
 wp_create_category( 'fb-kundendienst-beschwerde' );
 wp_create_category( 'fb-kundendienst-post' );
+
+//////////////////////////////////////////////////////////////////////////////
+//                     Declare WooCommerce Support
+//////////////////////////////////////////////////////////////////////////////
+
+add_action( 'after_setup_theme', 'woocommerce_support' );
+function woocommerce_support() {
+    add_theme_support( 'woocommerce' );
+}
 
 ?>
