@@ -25,7 +25,7 @@ get_header();
         ?>
 
         <div class="fb-post-full-wrapper">
-          <h2 class="fb-post-headline"><?php the_title(); ?></h2>
+          <a href="<?php echo get_the_permalink(); ?>"><h2 class="fb-post-headline"><?php the_title(); ?></h2></a>
           <div class="fb-post-meta-wrapper">
             <div class="fb-post-meta-left-wrapper">
               <div>von&nbsp;<?php the_author(); ?></div>
@@ -34,7 +34,7 @@ get_header();
               <div><?php the_date(); ?></div>
             </div>
           </div>
-          <div class="fb-post-author-comment"><?php the_field('intro'); ?></div>
+          <div class="fb-post-author-comment"><?php the_field('anrede'); ?></div>
           <div class="blogpost-wrapper">
             <div class="fb-post-wrapper"><img class="fb-post-image" src="https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg" width="64">
               <div class="fb-post-data-wrapper">
