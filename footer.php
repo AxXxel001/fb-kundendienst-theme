@@ -57,7 +57,8 @@ $template_root = get_template_directory_uri();
                     echo 'FEHLER: Category ist false';
                 }
                 print_r($cat);
-                $posts = get_posts(array('category' => 'fb-kundendienst-post'));
+                $cat_id = $cat->cat_ID;
+                $posts = get_posts(array('category' => $cat_id));
                 $length = sizeof($posts);
                 echo "$length posts are available";
                 $choice = rand(0, $length-1);
