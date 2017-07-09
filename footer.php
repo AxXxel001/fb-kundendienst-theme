@@ -54,9 +54,11 @@ $template_root = get_template_directory_uri();
             <?php
                 $posts = get_posts(array('category' => 'fb-kundendienst-beschwerde'));
                 $length = sizeof($posts);
+                echo "$length posts are available";
                 $choice = rand(0, $length-1);
                 setup_postdata( $posts[$choice] );
                 $current_post = get_post($id);
+                echo "<br>Post ID is $id";
             ?>
 
             <div class="footer-column w-col w-col-4">
