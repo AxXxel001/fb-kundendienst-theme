@@ -52,7 +52,7 @@ $template_root = get_template_directory_uri();
             <!-- BESCHWERDE NEWSLETTER!!! -->
 
             <?php
-                $posts = get_posts(array('category' => 'fb-kundendienst-beschwerde'));
+                $posts = get_posts(array('category' => 'fb-kundendienst-post'));
                 $length = sizeof($posts);
                 echo "$length posts are available";
                 $choice = rand(0, $length-1);
