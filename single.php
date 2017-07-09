@@ -66,7 +66,17 @@ get_header();
 
 
                 <div id="ad-bottom" class="ad">
-                    <div>/////// INSERT AD HERE //////////</div>
+                    <!-- BOTTOM ADVERTISEMENT -->
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- Content-Bottom -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-6430793242219369"
+                         data-ad-slot="1552400734"
+                         data-ad-format="auto"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
                 </div>
 
 
