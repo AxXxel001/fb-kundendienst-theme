@@ -11,9 +11,23 @@ get_header();
     <div class="content-sidebarcontainer w-container">
       <div class="left-content-wrapper">
 
-        <div id="ad-top" class="ad">
-          <div>/////// INSERT AD HERE //////////</div>
-        </div>
+          <div id="ad-top" class="ad">
+              <!-- TOP ADVERTISEMENT -->
+              <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+              <!-- Kundendienst Detail -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-6430793242219369"
+                   data-ad-slot="4856011530"
+                   data-ad-format="auto"></ins>
+              <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+          </div>
+
+          <?php
+            $post_counter = 1;
+          ?>
 
         <!-- Start the Loop. -->
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -50,6 +64,23 @@ get_header();
           </div>
         </div>
 
+            <?php
+                if ($post_counter % 5 == 0) {
+                    echo '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout="image-middle"
+     data-ad-layout-key="-ek+6d+b-cz+me"
+     data-ad-client="ca-pub-6430793242219369"
+     data-ad-slot="6643578330"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>';
+                }
+                $post_counter++;
+            ?>
+
         <?php endwhile;
         else : ?>
 
@@ -60,9 +91,19 @@ get_header();
             <!-- REALLY stop The Loop. -->
         <?php endif; ?>
 
-        <div id="ad-bottom" class="ad">
-          <div>/////// INSERT AD HERE //////////</div>
-        </div>
+          <div id="ad-bottom" class="ad">
+              <!-- BOTTOM ADVERTISEMENT -->
+              <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+              <!-- Content-Bottom -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-6430793242219369"
+                   data-ad-slot="1552400734"
+                   data-ad-format="auto"></ins>
+              <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+          </div>
 
 
 
