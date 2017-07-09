@@ -52,6 +52,11 @@ $template_root = get_template_directory_uri();
             <!-- BESCHWERDE NEWSLETTER!!! -->
 
             <?php
+                $cat = get_category_by_slug('fb-kundendienst-beschwerde');
+                if ($cat == false) {
+                    echo 'FEHLER: Category ist false';
+                }
+                print_r($cat);
                 $posts = get_posts(array('category' => 'fb-kundendienst-post'));
                 $length = sizeof($posts);
                 echo "$length posts are available";
