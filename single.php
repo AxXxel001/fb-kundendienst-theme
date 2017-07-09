@@ -12,7 +12,17 @@ get_header();
             <div class="left-content-wrapper">
 
                 <div id="ad-top" class="ad">
-                    <div>/////// INSERT AD HERE //////////</div>
+                    <!-- TOP ADVERTISEMENT -->
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- Kundendienst Detail -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-6430793242219369"
+                         data-ad-slot="4856011530"
+                         data-ad-format="auto"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
                 </div>
 
 
