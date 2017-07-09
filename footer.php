@@ -52,19 +52,14 @@ $template_root = get_template_directory_uri();
             <!-- BESCHWERDE NEWSLETTER!!! -->
 
             <?php
+                // Choose random 'beschwerde' post
                 $cat = get_category_by_slug('fb-kundendienst-beschwerde');
-                if ($cat == false) {
-                    echo 'FEHLER: Category ist false';
-                }
-                print_r($cat);
                 $cat_id = $cat->cat_ID;
                 $posts = get_posts(array('category' => $cat_id));
                 $length = sizeof($posts);
-                echo "$length posts are available";
                 $choice = rand(0, $length-1);
                 setup_postdata( $posts[$choice] );
                 $current_post = get_post($id);
-                echo "<br>Post ID is $id";
             ?>
 
             <div class="footer-column w-col w-col-4">
