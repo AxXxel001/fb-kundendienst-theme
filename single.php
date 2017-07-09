@@ -82,7 +82,7 @@ get_header();
 
             </div>
             <div class="sidebar-wrapper">
-                <?php get_sidebar(); ?>
+                <?php get_sidebar('single'); ?>
                 <!--
                 <div class="ad">
                   <div>/////// INSERT AD HERE //////////</div>
