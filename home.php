@@ -25,7 +25,7 @@ get_header();
         ?>
 
         <div class="fb-post-full-wrapper">
-          <a href="<?php echo get_the_permalink(); ?>"><h2 class="fb-post-headline"><?php the_title(); ?></h2></a>
+          <a style="text-decoration: none !important; color: black !important;" href="<?php echo get_the_permalink(); ?>"><h2 class="fb-post-headline"><?php the_title(); ?></h2></a>
           <!--
           <div class="fb-post-meta-wrapper">
             <div class="fb-post-meta-left-wrapper">
