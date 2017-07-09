@@ -34,7 +34,7 @@ get_header();
               <div><?php the_date(); ?></div>
             </div>
           </div>
-          <div class="fb-post-author-comment"><?php the_field('anrede'); ?></div>
+          <div class="fb-post-author-comment"><?php the_field('intro_text'); ?></div>
           <div class="blogpost-wrapper">
             <div class="fb-post-wrapper"><img class="fb-post-image" src="https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg" width="64">
               <div class="fb-post-data-wrapper">
