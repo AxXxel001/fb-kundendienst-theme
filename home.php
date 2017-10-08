@@ -40,13 +40,13 @@ get_header();
 
         <div class="fb-post-full-wrapper">
           <a style="text-decoration: none !important; color: black !important;" href="<?php echo get_the_permalink(); ?>"><h2 class="fb-post-headline"><?php the_title(); ?></h2></a>
-          <!--
+          
           <div class="fb-post-meta-wrapper">
             <div class="fb-post-meta-left-wrapper">
-              <div>von&nbsp;<?php /*the_author(); */?></div>
+              <div>von&nbsp;<?php the_author(); ?></div>
             </div>
             <div>
-              <div><?php /*the_date(); */?></div>
+              <div><?php the_date(); ?></div>
             </div>
           </div>
           <div class="fb-post-author-comment"><?php the_field('intro_text'); ?></div>
@@ -85,7 +85,7 @@ get_header();
 
             <!-- The very first "if" tested to see if there were any Posts to -->
             <!-- display.  This "else" part tells what do if there weren't any. -->
-            <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+            <p><?php _e('Aktuell sind keine Beiträge vorhanden.'); ?></p>
 
             <!-- REALLY stop The Loop. -->
         <?php endif; ?>
@@ -104,20 +104,10 @@ get_header();
               </script>
           </div>
 
-
-
-
       </div>
       <div class="sidebar-wrapper">
         <?php get_sidebar('blogposts'); ?>
-        <!--
-        <div class="ad">
-          <div>/////// INSERT AD HERE //////////</div>
-        </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-        -->
       </div>
-
 
     </div>
   </div>
