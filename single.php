@@ -27,7 +27,7 @@ get_header();
 
 
                 <?php
-                if (has_category('fb-kundendienst-beschwerde')) {
+                if (! has_category('fb-kundendienst-beschwerde')) {
                     echo 'Oh Oh! Falscher Post-Typ!...';
                 }
                 ?>
@@ -35,16 +35,16 @@ get_header();
                 <div class="fb-post-full-wrapper">
                     <a style="text-decoration: none !important; color: black !important;" href="<?php echo get_the_permalink(); ?>"><h2 class="fb-post-headline"><?php the_title(); ?></h2>
                     </a>
-                    <!--
+                    
                     <div class="fb-post-meta-wrapper">
                         <div class="fb-post-meta-left-wrapper">
-                            <div>von&nbsp;<?php /* the_author(); */ ?></div>
+                            <div>von&nbsp;<?php the_author(); ?></div>
                         </div>
                         <div>
-                            <div><?php /* the_date(); */ ?></div>
+                            <div><?php the_date(); ?></div>
                         </div>
                     </div>
-                    -->
+                    
                     <div class="fb-post-author-comment"><?php the_field('intro_text'); ?></div>
                     <div class="blogpost-wrapper">
                         <div class="fb-post-wrapper"><img class="fb-post-image"
