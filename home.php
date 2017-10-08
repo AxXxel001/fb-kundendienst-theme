@@ -33,7 +33,7 @@ get_header();
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
         <?php
-          if (has_category('fb-kundendienst-beschwerde')) {
+          if (! has_category('fb-kundendienst-beschwerde')) {
               continue;
           }
         ?>
