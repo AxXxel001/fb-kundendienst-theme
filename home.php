@@ -62,7 +62,7 @@ get_header();
             <div class="fb-post-text"><?php the_field('post_html'); ?></div>
           </div>
         </div>
-        <a href="<?php echo get_the_permalink(); ?>" class="button">Weiterlesen</a>
+        <button href="<?php echo get_the_permalink(); ?>" class="button">Weiterlesen</button>
 
             <?php
                 if ($post_counter % 5 == 0) {
