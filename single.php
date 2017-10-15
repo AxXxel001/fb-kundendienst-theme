@@ -66,8 +66,6 @@ Template Name: Single Blogpost
                     <!-- Comment Section -->
                     <?php
 
-                    echo get_theme_root_uri();
-
                     // check if the flexible content field has rows of data
                     if( have_rows('answer') ):
 
@@ -78,7 +76,7 @@ Template Name: Single Blogpost
 
                             <?php if( get_row_layout() == 'kundendienst-kommentar' ): ?>
 
-                                <div class="fb-comment-image-wrapper"><img src="https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg" class="fb-comment-image"></div>
+                                <div class="fb-comment-image-wrapper"><img src="<?php echo get_theme_root_uri()+'/images/fb-kundendienst.jpeg'; ?>" class="fb-comment-image"></div>
                                 <div class="fb-comment-data-wrapper">
                                     <div><span class="fb-comment-name"><span>Kundendienst</span></span><?php the_sub_field('text'); ?></div>
                                 </div>
