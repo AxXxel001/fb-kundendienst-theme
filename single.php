@@ -80,7 +80,7 @@ Template Name: Single Blogpost
 
                         elseif( get_row_layout() == 'nutzer-kommentar' ):
                             echo 'Nutzer:<br>';
-                            $file = get_sub_field('text');
+                            the_sub_field('text');
 
                         endif;
 
