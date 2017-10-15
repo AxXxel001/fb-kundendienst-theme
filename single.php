@@ -65,6 +65,37 @@ Template Name: Single Blogpost
                 </div>
 
 
+                <?php
+
+                // check if the flexible content field has rows of data
+                if( have_rows('answer') ):
+
+                    // loop through the rows of data
+                    while ( have_rows('answer') ) : the_row();
+
+                        if( get_row_layout() == 'kundendienst-kommentar' ):
+
+                            echo 'Kundendienst:<br>';
+                            the_sub_field('text');
+
+                        elseif( get_row_layout() == 'nutzer-kommentar' ):
+                            echo 'Nutzer:<br>';
+                            $file = get_sub_field('text');
+
+                        endif;
+
+                    endwhile;
+
+                else :
+
+                    // no layouts found
+
+                endif;
+
+                ?>
+
+
+
                 <div id="ad-bottom" class="ad">
                     <!-- BOTTOM ADVERTISEMENT -->
                     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
