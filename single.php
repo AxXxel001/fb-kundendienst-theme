@@ -35,15 +35,8 @@ Template Name: Single Blogpost
                 <div class="fb-post-full-wrapper">
                     <a style="text-decoration: none !important; color: black !important;" href="<?php echo get_the_permalink(); ?>"><h2 class="fb-post-headline"><?php the_title(); ?></h2>
                     </a>
-                    
-                    <div class="fb-post-meta-wrapper">
-                        <div class="fb-post-meta-left-wrapper">
-                            <div>von&nbsp;<?php the_author();?></div>
-                        </div>
-                        <div>
-                            <div><?php the_date(); ?></div>
-                        </div>
-                    </div>
+
+                    <!-- TODO: Add 'download as image' button -->
                     
                     <div class="fb-post-author-comment"><?php the_field('intro_text'); ?></div>
                     <div class="blogpost-wrapper">

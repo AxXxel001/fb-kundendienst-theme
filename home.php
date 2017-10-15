@@ -40,15 +40,7 @@ get_header();
 
         <div class="fb-post-full-wrapper">
           <a style="text-decoration: none !important; color: black !important;" href="<?php echo get_the_permalink(); ?>"><h2 class="fb-post-headline"><?php the_title(); ?></h2></a>
-          
-          <div class="fb-post-meta-wrapper">
-            <div class="fb-post-meta-left-wrapper">
-              <div>von&nbsp;<?php the_author(); ?></div>
-            </div>
-            <div>
-              <div><?php the_date(); ?></div>
-            </div>
-          </div>
+
           <div class="fb-post-author-comment"><?php the_field('intro_text'); ?></div>
           <div class="blogpost-wrapper">
             <div class="fb-post-wrapper"><img class="fb-post-image" src="https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg" width="64">
@@ -59,7 +51,7 @@ get_header();
                 </div>
               </div>
             </div>
-            <div class="fb-post-text"><?php the_field('post_html'); ?></div>
+            <div class="fb-post-text"><?php the_field('post'); ?></div>
           </div>
         </div>
         <button href="<?php echo get_the_permalink(); ?>" class="w-button button">Weiterlesen</button>
@@ -67,16 +59,16 @@ get_header();
             <?php
                 if ($post_counter % 5 == 0) {
                     echo '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-format="fluid"
-     data-ad-layout="image-middle"
-     data-ad-layout-key="-ek+6d+b-cz+me"
-     data-ad-client="ca-pub-6430793242219369"
-     data-ad-slot="6643578330"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>';
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-format="fluid"
+                         data-ad-layout="image-middle"
+                         data-ad-layout-key="-ek+6d+b-cz+me"
+                         data-ad-client="ca-pub-6430793242219369"
+                         data-ad-slot="6643578330"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>';
                 }
                 $post_counter++;
             ?>
