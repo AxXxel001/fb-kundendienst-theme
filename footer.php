@@ -53,7 +53,7 @@ $template_root = get_template_directory_uri();
 
             <?php
                 // Choose random 'beschwerde' post
-                $cat = get_category_by_slug('fb-kundendienst-beschwerde');
+                $cat = get_category_by_slug('fb-kundendienst-beschwerde-only');
                 $cat_id = $cat->cat_ID;
                 $posts = get_posts(array('category' => $cat_id));
                 $length = sizeof($posts);
@@ -64,8 +64,8 @@ $template_root = get_template_directory_uri();
 
             <div class="footer-column w-col w-col-4">
                 <h3 class="footer-headline">Mach jetzt mit!</h3>
-                <blockquote class="footer-quote"><?php echo $current_post->post_content; ?></blockquote>
-                <div class="footer-quote-name">-&nbsp;<?php echo get_field('person_name', $id); ?></div>
+                <blockquote class="footer-quote"><?php echo get_field('text', $id); ?></blockquote>
+                <div class="footer-quote-name">-&nbsp;<?php echo get_field('name', $id); ?></div>
                 <div class="fb-footer-form">
                     <form data-name="Email Form" id="email-form" name="email-form">
                         <input class="w-input" data-name="email" id="email-2" maxlength="256" name="email" placeholder="Deine Emailadresse..." required="required" type="email">
