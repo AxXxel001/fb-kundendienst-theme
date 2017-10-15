@@ -6,13 +6,9 @@ $template_root = get_template_directory_uri();
 <div class="footer">
     <div class="w-container">
         <div class="w-row">
+
             <div class="footer-column w-col w-col-4">
-
-
-                <!-- NAVBAR WIE OBEN!!!!!!!!! -->
-
                 <h3 class="footer-headline">Facebook Kundendienst</h3>
-
                 <div class="footer-nav-menu">
                     <?php
                     wp_nav_menu(
@@ -22,20 +18,7 @@ $template_root = get_template_directory_uri();
                     );
                     ?>
                 </div>
-
-                <!--
-                <ul class="w-list-unstyled">
-                    <li><a class="footer-link" href="#">Text Link</a>
-                    </li>
-                    <li><a class="footer-link" href="#">Text Link</a>
-                    </li>
-                    <li><a class="footer-link" href="#">Text Link</a>
-                    </li>
-                </ul>
-                -->
             </div>
-
-
 
             <div class="footer-column w-col w-col-4">
                 <h3 class="footer-headline">Social</h3>
@@ -49,10 +32,8 @@ $template_root = get_template_directory_uri();
                 </ul>
             </div>
 
-            <!-- BESCHWERDE NEWSLETTER!!! -->
-
             <?php
-                // Choose random 'beschwerde' post
+                // Choose random post
                 $cat = get_category_by_slug('fb-kundendienst-beschwerde-only');
                 $cat_id = $cat->cat_ID;
                 $posts = get_posts(array('category' => $cat_id));
@@ -74,6 +55,7 @@ $template_root = get_template_directory_uri();
                     </form>
                 </div>
             </div>
+
         </div>
     </div>
 </div>
