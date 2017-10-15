@@ -62,37 +62,46 @@ Template Name: Single Blogpost
                         </div>
                         <div class="fb-post-text"><?php the_field('post'); ?></div>
                     </div>
+
+                    <!-- Comment Section -->
+                    <?php
+
+                    // check if the flexible content field has rows of data
+                    if( have_rows('answer') ):
+
+                        // loop through the rows of data
+                        while ( have_rows('answer') ) : the_row(); ?>
+
+                            <div class="fb-comment-wrapper">
+
+                            <?php if( get_row_layout() == 'kundendienst-kommentar' ): ?>
+
+                                <div class="fb-comment-image-wrapper"><img src="https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg" class="fb-comment-image"></div>
+                                <div class="fb-comment-data-wrapper">
+                                    <div><span class="fb-comment-name"><span>Kundendienst</span></span><?php the_sub_field('text'); ?></div>
+                                </div>
+
+                            <?php elseif( get_row_layout() == 'nutzer-kommentar' ): ?>
+
+                                <div class="fb-comment-image-wrapper"><img src="https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg" class="fb-comment-image"></div>
+                                <div class="fb-comment-data-wrapper">
+                                    <div><span class="fb-comment-name"><span><?php the_sub_field('name'); ?></span></span><?php the_sub_field('text'); ?></div>
+                                </div>
+
+                            <?php endif; ?>
+
+                            </div>
+
+                        <?php endwhile;
+
+                    else :
+
+                        // no layouts found
+
+                    endif;
+
+                    ?>
                 </div>
-
-
-                <?php
-
-                // check if the flexible content field has rows of data
-                if( have_rows('answer') ):
-
-                    // loop through the rows of data
-                    while ( have_rows('answer') ) : the_row();
-
-                        if( get_row_layout() == 'kundendienst-kommentar' ):
-
-                            echo 'Kundendienst:<br>';
-                            the_sub_field('text');
-
-                        elseif( get_row_layout() == 'nutzer-kommentar' ):
-                            echo 'Nutzer:<br>';
-                            the_sub_field('text');
-
-                        endif;
-
-                    endwhile;
-
-                else :
-
-                    // no layouts found
-
-                endif;
-
-                ?>
 
 
 
