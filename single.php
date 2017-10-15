@@ -38,7 +38,7 @@ Template Name: Single Blogpost
                     
                     <div class="fb-post-meta-wrapper">
                         <div class="fb-post-meta-left-wrapper">
-                            <div>von&nbsp;<?php the_author(); return 0/0;?></div>
+                            <div>von&nbsp;<?php the_author();?></div>
                         </div>
                         <div>
                             <div><?php the_date(); ?></div>
