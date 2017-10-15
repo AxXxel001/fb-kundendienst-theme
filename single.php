@@ -66,6 +66,8 @@ Template Name: Single Blogpost
                     <!-- Comment Section -->
                     <?php
 
+                    echo get_theme_root_uri();
+
                     // check if the flexible content field has rows of data
                     if( have_rows('answer') ):
 
