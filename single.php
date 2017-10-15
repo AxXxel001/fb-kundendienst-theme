@@ -1,12 +1,12 @@
 <?php
 /*
-Template Name: Single
+Template Name: Single Blogpost
 */
 ?>
-<?php
-$template_root = get_template_directory_uri();
-get_header();
-?>
+
+
+<?php $template_root = get_template_directory_uri(); get_header(); ?>
+
     <div class="content">
         <div class="content-sidebarcontainer w-container">
             <div class="left-content-wrapper">
@@ -60,7 +60,7 @@ get_header();
                                 </div>
                             </div>
                         </div>
-                        <div class="fb-post-text"><?php the_field('post_html'); ?></div>
+                        <div class="fb-post-text"><?php the_field('post'); ?></div>
                     </div>
                 </div>
 
